@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/slackey"
+        android:text="Test Your Brain"
+        android:textColor="#252424"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brain" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="367dp"
+        android:layout_height="574dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/mathematics"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="mathematics"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/tools"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+            <Button
+                android:id="@+id/science"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="science"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/chemistry"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/History"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="History"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/parchment"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Language"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="Language"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/languages"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/puzzle"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="Puzzle"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/jigsaw"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+            <Button
+                android:id="@+id/drama"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbox"
+                android:text="Drama"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/theater"
+                app:iconGravity="textTop"
+                app:iconSize="50dp"
+                app:iconTint="@null">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
